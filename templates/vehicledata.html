@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicle Insurance Prediction</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav class="navbar">
+    <div class="nav-inner">
+        <div class="nav-brand">
+            <span class="brand-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2z"/><circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/><path d="M5 9l2-4h10l2 4"/><path d="M9 9h6"/></svg>
+            </span>
+            <span>InsureAI</span>
+        </div>
+        <div class="nav-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#predict" class="nav-cta">Get Prediction</a>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+    <div class="hero-bg-grid"></div>
+    <div class="hero-orb hero-orb-1"></div>
+    <div class="hero-orb hero-orb-2"></div>
+    <div class="hero-orb hero-orb-3"></div>
+
+    <div class="hero-content">
+        <div class="hero-badge">
+            <span class="badge-dot"></span>
+            AI-Powered Prediction Engine
+        </div>
+        <h1 class="hero-title">Vehicle Insurance<br><em>Prediction System</em></h1>
+        <p class="hero-subtitle">Predict whether a customer will purchase vehicle insurance using advanced Machine Learning — in seconds.</p>
+        <div class="hero-stats">
+            <div class="stat">
+                <span class="stat-value">94.2%</span>
+                <span class="stat-label">Model Accuracy</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-value">11</span>
+                <span class="stat-label">Features Analyzed</span>
+            </div>
+            <div class="stat-divider"></div>
+            <div class="stat">
+                <span class="stat-value">&lt;1s</span>
+                <span class="stat-label">Prediction Time</span>
+            </div>
+        </div>
+        <a href="#predict" class="hero-btn">
+            Run Prediction
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+    </div>
+
+    <div class="hero-visual">
+        <div class="car-card">
+            <div class="car-card-top">
+                <div class="car-icon-wrap">
+                    <svg width="50" height="50" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4">
+                        <path d="M19 17H5a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2z"/>
+                        <circle cx="7.5" cy="17" r="1.5"/><circle cx="16.5" cy="17" r="1.5"/>
+                        <path d="M5 9l2-4h10l2 4"/><path d="M9 9h6"/>
+                    </svg>
+                </div>
+                <div class="car-pulse"></div>
+            </div>
+            <div class="car-card-label">Insurance Risk Score</div>
+            <div class="risk-bar-wrap">
+                <div class="risk-bar"><div class="risk-fill"></div></div>
+                <span class="risk-pct">72%</span>
+            </div>
+            <div class="car-features-mini">
+                <span class="feat-chip">Age: 35</span>
+                <span class="feat-chip feat-green">Licensed</span>
+                <span class="feat-chip feat-amber">Prior Damage</span>
+            </div>
+        </div>
+        <div class="floating-tag tag-1">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            ML Model Active
+        </div>
+        <div class="floating-tag tag-2">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            Secure & Private
+        </div>
+    </div>
+</section>
+
+<!-- FEATURES -->
+<section class="features-section" id="features">
+    <div class="section-label">What We Analyze</div>
+    <h2 class="section-title">Powered by Intelligent Features</h2>
+    <p class="section-sub">Our ML model processes 11 key parameters to deliver highly accurate insurance purchase predictions.</p>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feat-icon-wrap" style="--c: #818cf8">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+            </div>
+            <h3>Demographics</h3>
+            <p>Age, gender, and region code to understand customer profile and risk segment.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feat-icon-wrap" style="--c: #fbbf24">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+            </div>
+            <h3>Insurance History</h3>
+            <p>Whether the customer was previously insured — a key signal for cross-sell propensity.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feat-icon-wrap" style="--c: #34d399">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2z"/><path d="M7 17v2M17 17v2"/></svg>
+            </div>
+            <h3>Vehicle Condition</h3>
+            <p>Vehicle age brackets and prior damage history to assess urgency for coverage.</p>
+        </div>
+        <div class="feature-card">
+            <div class="feat-icon-wrap" style="--c: #f472b6">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+            </div>
+            <h3>Financial Signals</h3>
+            <p>Annual premium value and sales channel decode the customer's spending behaviour.</p>
+        </div>
+    </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="how-section" id="how-it-works">
+    <div class="section-label">Simple Process</div>
+    <h2 class="section-title">How It Works</h2>
+    <div class="steps-row">
+        <div class="step-card">
+            <div class="step-number">01</div>
+            <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+            </div>
+            <h3>Enter Customer Data</h3>
+            <p>Fill in the 11 customer and vehicle details in the prediction form below.</p>
+        </div>
+        <div class="step-connector">
+            <svg width="36" height="14" viewBox="0 0 36 14"><path d="M0 7 H32 M26 2 L34 7 L26 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step-card">
+            <div class="step-number">02</div>
+            <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="3"/><path d="M12 1v4M12 19v4M4.22 4.22l2.83 2.83M16.95 16.95l2.83 2.83M1 12h4M19 12h4M4.22 19.78l2.83-2.83M16.95 7.05l2.83-2.83"/></svg>
+            </div>
+            <h3>ML Model Runs</h3>
+            <p>Our trained model processes all features and computes purchase probability instantly.</p>
+        </div>
+        <div class="step-connector">
+            <svg width="36" height="14" viewBox="0 0 36 14"><path d="M0 7 H32 M26 2 L34 7 L26 12" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round"/></svg>
+        </div>
+        <div class="step-card">
+            <div class="step-number">03</div>
+            <div class="step-icon">
+                <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3>View Prediction</h3>
+            <p>Get a clear, color-coded result showing whether the customer is likely to convert.</p>
+        </div>
+    </div>
+</section>
+
+<!-- PREDICTION FORM -->
+<section class="predict-section" id="predict">
+    <div class="predict-wrapper">
+        <div class="predict-header">
+            <div class="section-label" style="margin-bottom:10px;">Prediction Engine</div>
+            <h2 class="section-title" style="margin-bottom:8px;">Run a Prediction</h2>
+            <p class="section-sub">Enter the customer details below to get an instant insurance purchase prediction.</p>
+        </div>
+
+        <div class="form-card">
+            <form method="post" action="/" id="predictForm">
+
+                <div class="form-section-label">Personal Info</div>
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="Gender">Gender</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg></span>
+                            <input type="number" id="Gender" name="Gender" min="0" max="1" placeholder="1=Male, 0=Female" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Age">Age</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg></span>
+                            <input type="number" id="Age" name="Age" placeholder="Customer age" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Region_Code">Region Code</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                            <input type="number" step="0.01" id="Region_Code" name="Region_Code" placeholder="Region code" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section-label">License & Insurance</div>
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="Driving_License">Driving License</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="1" y="4" width="22" height="16" rx="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg></span>
+                            <input type="number" id="Driving_License" name="Driving_License" min="0" max="1" placeholder="0=No, 1=Yes" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Previously_Insured">Previously Insured</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg></span>
+                            <input type="number" id="Previously_Insured" name="Previously_Insured" min="0" max="1" placeholder="0=No, 1=Yes" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Annual_Premium">Annual Premium</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></span>
+                            <input type="number" step="0.01" id="Annual_Premium" name="Annual_Premium" placeholder="e.g. 28000" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section-label">Vehicle Details</div>
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="Vehicle_Age_lt_1_Year">Age &lt; 1 Year</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                            <input type="number" id="Vehicle_Age_lt_1_Year" name="Vehicle_Age_lt_1_Year" min="0" max="1" placeholder="0=No, 1=Yes" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Vehicle_Age_gt_2_Years">Age &gt; 2 Years</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+                            <input type="number" id="Vehicle_Age_gt_2_Years" name="Vehicle_Age_gt_2_Years" min="0" max="1" placeholder="0=No, 1=Yes" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Vehicle_Damage_Yes">Vehicle Damage</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></span>
+                            <input type="number" id="Vehicle_Damage_Yes" name="Vehicle_Damage_Yes" min="0" max="1" placeholder="0=No, 1=Yes" required>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-section-label">Sales Info</div>
+                <div class="form-row">
+                    <div class="field-group">
+                        <label for="Policy_Sales_Channel">Sales Channel</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.36 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.27 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+                            <input type="number" step="0.01" id="Policy_Sales_Channel" name="Policy_Sales_Channel" placeholder="Channel code" required>
+                        </div>
+                    </div>
+                    <div class="field-group">
+                        <label for="Vintage">Vintage (Days)</label>
+                        <div class="input-wrap">
+                            <span class="input-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg></span>
+                            <input type="number" id="Vintage" name="Vintage" placeholder="Days as customer" required>
+                        </div>
+                    </div>
+                    <div class="field-group"></div>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="predict-btn" id="predictBtn">
+                        <span class="btn-text">
+                            <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+                            Run Prediction
+                        </span>
+                        <span class="btn-loading" style="display:none">
+                            <span class="spinner"></span> Predicting...
+                        </span>
+                    </button>
+                </div>
+            </form>
+
+            <form method="get" action="/train" style="text-align:center; margin-top:16px;">
+                <button type="submit" class="train-btn">
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83"/></svg>
+                    Retrain ML Model
+                </button>
+            </form>
+
+           {% if context %}
+<div class="result-card {% if 'Yes' in context %}result-positive{% else %}result-negative{% endif %}" id="resultCard">
+    <div class="result-icon-wrap">
+        {% if 'Yes' in context %}
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+            </svg>
+        {% else %}
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+        {% endif %}
+    </div>
+    <div class="result-body">
+        <div class="result-label">Prediction Result</div>
+        <div class="result-text">{{ context }}</div>
+        <div class="result-meta">
+            {% if 'Yes' in context %}
+                <p>This customer is likely to purchase vehicle insurance. Prioritize outreach for this lead.</p>
+            {% else %}
+                <p>This customer is unlikely to convert. Consider alternative retention strategies.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endif %}
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+    <div class="footer-inner">
+        <div class="footer-brand">
+            <span class="brand-icon">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 17H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2z"/><path d="M7 17v2M17 17v2"/></svg>
+            </span>
+            InsureAI
+        </div>
+        <p class="footer-sub">Vehicle Insurance Prediction System — Powered by Machine Learning</p>
+        <div class="footer-links">
+            <a href="#features">Features</a>
+            <a href="#how-it-works">How It Works</a>
+            <a href="#predict">Predict</a>
+        </div>
+        <div class="footer-divider"></div>
+        <p class="footer-copy">Built with Flask &amp; scikit-learn &nbsp;·&nbsp; UI redesigned for modern clarity</p>
+    </div>
+</footer>
+
+<script>
+    document.getElementById('predictForm').addEventListener('submit', function() {
+        const btn = document.getElementById('predictBtn');
+        btn.querySelector('.btn-text').style.display = 'none';
+        btn.querySelector('.btn-loading').style.display = 'flex';
+        btn.disabled = true;
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const t = document.querySelector(this.getAttribute('href'));
+            if (t) t.scrollIntoView({ behavior: 'smooth' });
+        });
+    });
+
+    const obs = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+    }, { threshold: 0.1 });
+    document.querySelectorAll('.feature-card, .step-card, .form-card').forEach(el => {
+        el.classList.add('fade-up');
+        obs.observe(el);
+    });
+</script>
+</body>
+</html>

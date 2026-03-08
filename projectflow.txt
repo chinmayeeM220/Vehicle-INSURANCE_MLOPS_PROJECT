@@ -117,7 +117,8 @@
 
 28. Open EC2 and Install docker in EC2 Machine:
       ## Optinal
-      sudo apt-get update -y
+       
+      
       sudo apt-get upgrade
       ## Required (Because Docker is'nt there in our EC2 server - [docker --version])
       curl -fsSL https://get.docker.com -o get-docker.sh
