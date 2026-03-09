@@ -101,7 +101,7 @@
 26. Add "static" and "template" dir to the project.
 
 27. Getting started with CI-CD process:
-      * Setup the dockerfile and .dockerignore file
+      * SECR_REPOetup the dockerfile and .dockerignore file
       * Setup the .github\workflows dir and aws.yaml file within
       * Go to AWS console and create a new IAM user exactly the way we did earlier (name: "usvisa-user") >>
         Go inside user >> Security Credentials >> Access Keys >> create access key >> CLI >> check agreement
@@ -118,8 +118,8 @@
 28. Open EC2 and Install docker in EC2 Machine:
       ## Optinal
        
-      
-      sudo apt-get upgrade
+       sudo apt-get update -y
+       sudo apt-get upgrade
       ## Required (Because Docker is'nt there in our EC2 server - [docker --version])
       curl -fsSL https://get.docker.com -o get-docker.sh
       sudo sh get-docker.sh
@@ -139,7 +139,7 @@
       AWS_ACCESS_KEY_ID
       AWS_SECRET_ACCESS_KEY
       AWS_DEFAULT_REGION
-      ECR_REPO
+      
 
 31. CI-CD pipeline will be triggered at next commit and push.
 32. Now we need to activate the 5000 port of our EC2 instance:
